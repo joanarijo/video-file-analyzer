@@ -1,0 +1,22 @@
+{
+  "name": "video-file-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanarijo/video-file-analyzer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joanarijo/video-file-analyzer/issues"
+  },
+  "homepage": "https://github.com/joanarijo/video-file-analyzer#readme",
+  "dependencies": {
+    "electron": "^15.3.0"
+  }
+}
