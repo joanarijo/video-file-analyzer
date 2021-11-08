@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/joanarijo/video-file-analyzer#readme",
   "dependencies": {
-    "electron": "^15.3.0"
+    "electron": "^15.3.0",
+    "fluent-ffmpeg": "^2.1.2"
   }
 }
