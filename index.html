@@ -16,16 +16,21 @@
             <button type="submit">Get Length</button>
         </form>
 
+        <h1 id="result"></h1>
         <script>
             const electron = require('electron');
             const { ipcRenderer } = electron;
 
-            document.querySelector('form').addEventListener('submit', (e) => {
-                e.preventDefault();
+            document.querySelector('form').addEventListener('submit', (event) => {
+                event.preventDefault();
 
-                const file = document.querySelector('input').files[0];
+                const { path } = document.querySelector('input').files[0];
 
                 ipcRenderer.send('videosubmit', path);
+            });
+
+            ipcRenderer.on('videometadata', (event, duration) => {
+                document.querySelector('#result').innerHTML = `The video file has ${duration} seconds.`
             });
         </script>
 </body>
