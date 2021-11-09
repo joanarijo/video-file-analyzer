@@ -1,5 +1,4 @@
 ## 🚀 RUN
 
-    ```sh
-    # npm run electron
-    ```
+# npm run electron
+    
